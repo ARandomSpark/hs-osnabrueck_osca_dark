@@ -1,0 +1,66 @@
+/* ==UserStyle==
+@name           Osca dark
+@namespace      github.com/openstyles/stylus
+@version        0.0.1
+@description    Dark Theme for osca.hs-osnabrueck.de
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("http://home.edvsz.hs-osnabrueck.de/skleuker/"), domain("osca.hs-osnabrueck.de") {
+body {
+	background-color: #282828;
+	color: #aeaeae;
+}
+
+#UserMenu_All_SubNavigation {
+	background-color: #282828;
+	color: #aeaeae;
+}
+
+#UserMenu_All_Header {
+	background-color: #282828;
+}
+
+#s4-workspace {
+	background-color: #282828;
+}
+}
+
+@-moz-document url-prefix("http://home.edvsz.hs-osnabrueck.de/skleuker/") {
+a {
+	background-color: #474747;
+	color: #aeaeae;
+}
+}
+
+@-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/topbar_studenplan.aspx") {
+table.nb > tbody > tr.tbsubhead {
+	background-color: #282828 !important;
+}
+
+.weekday {
+	background-color: #282828;
+}
+
+.nb > caption:nth-child(1) {
+	background: none !important;
+	background-color: #282828;
+}
+
+.tbtime12 {
+	background-color: #353535 !important;
+}
+
+table.nb > tbody > tr > td.appointment {
+	background-color: #282828 !important;
+}
+
+select {
+	background-color: #353535;
+	color: #aeaeae !important;
+}
+
+option {
+	color: #aeaeae !important;
+}
+}
