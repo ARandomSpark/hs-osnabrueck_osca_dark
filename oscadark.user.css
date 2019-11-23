@@ -18,7 +18,11 @@ body {
 }
 
 #UserMenu_All_Header {
-	background-color: #282828;
+	background-color: #474747;
+}
+
+a.owncss_BenutzerMenue_Links {
+	color: #aeaeae !important;
 }
 
 #s4-workspace {
