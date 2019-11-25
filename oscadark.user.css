@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      github.com/openstyles/stylus
-@version        0.1.1
+@version        0.2.0
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 ==/UserStyle== */
@@ -197,8 +197,7 @@
 	}
 }
 
-@-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/infothek.aspx") {
-    /* TODO: Finish this */
+@-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/infothek.aspx"), url-prefix("https://osca.hs-osnabrueck.de/lms") {
 	/* Folder Options */
 	.ms-cui-topBar2, .ms-cui-tabBody {
 		background-color: #282828;
@@ -209,8 +208,15 @@
 	}
 	
 	.ms-cui-tt > .ms-cui-tt-a {
-		background-color: #353535 !important;
 		border-color: #474747 !important;
+	}
+	
+	.ms-cui-tt > .ms-cui-tt-a:hover {
+		background-color: #353535 !important;
+	}
+	
+	.ms-cui-tt-s > .ms-cui-tt-a {
+		background-color: #353535;
 	}
 	
 	.ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span, .ms-cui-tt-a > .ms-cui-tt-span {
@@ -223,5 +229,22 @@
 	
 	.ms-cui-groupSeparator {
 		border-color: #474747;
+	}
+	
+	.ms-cui-ctl-mediumlabel, .ms-cui-ctl-largelabel, .ms-cui-groupTitle {
+		color: #aeaeae;
+	}
+	
+	/* Folder Items */
+	.ms-listlink, .ms-subtleLink, span.ms-noWrap, .ms-vb2 {
+		color: #aeaeae !important;
+	}
+	
+	.ms-itmHoverEnabled:hover > * {
+		background-color: #353535;
+	}
+	
+	.ms-itmHoverEnabled:hover .ms-list-itemLink-td {
+		background-color: #474747;
 	}
 }
