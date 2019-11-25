@@ -53,6 +53,14 @@
 		color: #aeaeae;
 		border-color: #474747 !important;
 	}
+	
+	.owncss_sitecollectionmanagement_Panel_SemesterChoice {
+		background-color: #282828;
+	}
+	
+	.owncss_div_SelectedSemester, .owncss_div_semesterchoise {
+		background-color: #353535;
+	}
 }
 
 @-moz-document domain("login.hs-osnabrueck.de") {
