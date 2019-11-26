@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      github.com/openstyles/stylus
-@version        0.2.1
+@version        0.2.2
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 ==/UserStyle== */
@@ -254,5 +254,22 @@
 	
 	.s4-itm-selected .ms-list-itemLink-td {
 		background-color: #5c5c5c;
+	}
+	/* Item Popups */
+	
+	.js-callout-beakLeft, .js-callout-beakRight, .js-callout-beakTop, .js-callout-beakBottom, .js-callout-content {
+		background-color: #474747;
+	}
+	
+	.js-callout-footerArea, .js-callout-location {
+		background-color: #5c5c5c;
+	}
+	
+	.ms-calloutLink:link {
+		color: #aeaeae;
+	}
+	
+	.js-callout-title {
+		color: #aeaeae !important;
 	}
 }
