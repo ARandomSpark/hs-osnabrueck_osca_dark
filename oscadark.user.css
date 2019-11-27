@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      github.com/openstyles/stylus
-@version        0.2.2
+@version        0.3.0
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 ==/UserStyle== */
@@ -272,4 +272,48 @@
 	.js-callout-title {
 		color: #aeaeae !important;
 	}
+}
+
+@-moz-document domain("netcase.hs-osnabrueck.de") {
+    body, #app-sidebar, #app-settings-content, #webdavurl, .section {
+        background-color: #282828;
+		color: #aeaeae;
+    }
+    
+    #app-navigation, #filestable tbody tr, #controls, #controls .button.new, .nav-trashbin, .settings-button, .settings-button:hover, .settings-button:focus, #searchresults {
+        background-color: #282828;
+    }
+    
+    #controls .button.view-switcher, #content-wrapper {
+        background-color: #282828 !important;
+    }
+    
+    #controls .button.view-switcher:hover, #filestable tbody tr:hover, #filestable tbody tr.highlighted, textarea, input[type="text"], input[type="email"], input[type="button"], select, select:hover {
+        background-color: #474747 !important;
+    }
+    
+    #app-navigation li > a, tbody a, .filesize, .modified, .info > span, button:hover, .settings-button, .tabHeaders .tabHeader.selected a, .tabHeaders .tabHeader:hover a, input[type="text"]:hover, input[type="email"]:hover, input[type="button"]:hover, select:hover {
+        color: #d2d2d2 !important;
+    }
+    
+    a {
+        color: #f0f0f0;
+    }
+    
+    textarea, textarea:hover, input[type="text"], input[type="email"], input[type="button"], select {
+		color: #aeaeae;
+    }
+    
+    table thead th {
+        background-color: #282828;
+    }
+    
+    table th, table td, #app-navigation, .nav-trashbin, #app-settings-header, #app-sidebar, textarea, input[type="email"], 
+    textarea, textarea:hover, input[type="text"], input[type="button"], select {
+        border-color: #474747;
+    }
+    
+    .submit, #webdavurl {
+        border-color: #474747 !important;
+    }
 }
