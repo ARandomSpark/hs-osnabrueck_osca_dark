@@ -7,4 +7,4 @@ Die Browsererweiterung [Stylus](https://github.com/openstyles/stylus) wird für 
  
  Wenn Stylus installiert is können sie [hier](https://raw.githubusercontent.com/ARandomSpark/hs-osnabrueck_osca_dark/master/oscadark.user.css) klicken, um den Style zu importieren.
 ## Individualisierung
-Um selber die Farben anzupassen, klicken sie auf das Zahnrad neben "Osca Dark" in der Liste der instalierten Styles. Die Farben werden sofort auf der Website verändert. Mehr Informationen dazu [hier](https://github.com/openstyles/stylus/wiki/UserCSS#how-do-i-customize-usercss).
+Um selber die Farben anzupassen, klicken sie auf das Zahnrad neben "Osca Dark" in der Liste der installierten Styles. Die Farben werden sofort auf der Website verändert. Mehr Informationen dazu [hier](https://github.com/openstyles/stylus/wiki/UserCSS#how-do-i-customize-usercss).
