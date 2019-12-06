@@ -1,21 +1,30 @@
 /* ==UserStyle==
 @name           Osca dark
-@namespace      github.com/openstyles/stylus
-@version        0.3.0
+@namespace      https://github.com/ARandomSpark
+@version        0.3.1
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
+@homepageURL 	https://github.com/ARandomSpark/hs-osnabrueck_osca_dark
+@supportURL		https://github.com/ARandomSpark/hs-osnabrueck_osca_dark/issues
+@updateURL 		https://raw.githubusercontent.com/ARandomSpark/hs-osnabrueck_osca_dark/master/oscadark.user.css
+@license		MIT
+@preprocessor 	uso
+@var			color back1 "Hintergrund1" #282828
+@var			color back2 "Hintergrund2 + Linien" #474747
+@var			color text1 "Textfarbe1" #aeaeae
+@var			color back3 "Hintergrund3" #353535
 ==/UserStyle== */
 
 @-moz-document domain("osca.hs-osnabrueck.de") {
 	/* General */
 	body {
-		background-color: #282828;
-		color: #aeaeae;
+		background-color: /*[[back1]]*/;
+		color: /*[[text1]]*/;
 	}
 	
 	hr, div {
-		border-color: #474747 !important;
-		color: #aeaeae !important;
+		border-color: /*[[back2]]*/ !important;
+		color: /*[[text1]]*/ !important;
 	}
 	
 	#s4-workspace {
@@ -24,145 +33,145 @@
 	
 	/* Lines */
 	td, th {
-		border-color: #474747 !important;
+		border-color: /*[[back2]]*/ !important;
 	}
 	
 	/* Topmenu */
 	#UserMenu_All_SubNavigation {
-		background-color: #282828;
-		color: #aeaeae;
+		background-color: /*[[back1]]*/;
+		color: /*[[text1]]*/;
 	}
 
 	#UserMenu_All_Header {
-		background-color: #474747 !important;
+		background-color: /*[[back2]]*/ !important;
 	}
 
 	a.owncss_BenutzerMenue_Links {
-		color: #aeaeae !important;
+		color: /*[[text1]]*/ !important;
 	}
 	
 	#Benutzermenue_HoverUser {
-		background-color: #282828 !important;
-		color: #aeaeae !important;
-		border-color: #474747 !important;
+		background-color: /*[[back1]]*/ !important;
+		color: /*[[text1]]*/ !important;
+		border-color: /*[[back2]]*/ !important;
 	}
 	
 	/* Meine Veranstaltungen > Suchfeld */
 	#input_suchfeld_semester {
-		background-color: #474747;
-		color: #aeaeae;
-		border-color: #474747 !important;
+		background-color: /*[[back2]]*/;
+		color: /*[[text1]]*/;
+		border-color: /*[[back2]]*/ !important;
 	}
 	
 	.owncss_sitecollectionmanagement_Panel_SemesterChoice {
-		background-color: #282828;
+		background-color: /*[[back1]]*/;
 	}
 	
 	.owncss_div_SelectedSemester, .owncss_div_semesterchoise {
-		background-color: #353535;
+		background-color: /*[[back3]]*/;
 	}
 }
 
 @-moz-document domain("login.hs-osnabrueck.de") {
 	/* General */
     body, div {
-        background-color: #282828 !important;
+        background-color: /*[[back1]]*/ !important;
     }
 	
 	/* Input */
 	#hsos_username, #hsos_password {
-		background-color: #474747 !important;
+		background-color: /*[[back2]]*/ !important;
 	}
 	
 	input[type="text"], input[type="password"] {
-		color: #aeaeae;
-		background-color: #474747;
+		color: /*[[text1]]*/;
+		background-color: /*[[back2]]*/;
 	}
 	
 	tr > td > div.cardDetail {
-		background-color: #282828 !important;
+		background-color: /*[[back1]]*/ !important;
 	}
 	
 	tbody > tr > td > div#content {
-		background-color: #282828 !important;
+		background-color: /*[[back1]]*/ !important;
 	}
 	
 	table {
-		background-color: #282828;
+		background-color: /*[[back1]]*/;
 	}
 }
 @-moz-document url-prefix("http://home.edvsz.hs-osnabrueck.de/skleuker/") {
 	body {
-		background-color: #282828;
-		color: #aeaeae;
+		background-color: /*[[back1]]*/;
+		color: /*[[text1]]*/;
 	}
 	
 	a {
-		background-color: #474747;
-		color: #aeaeae;
+		background-color: /*[[back2]]*/;
+		color: /*[[text1]]*/;
 	}
 }
 
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/topbar_studenplan.aspx") {
 	
 	table.nb > tbody > tr.tbsubhead {
-		background-color: #282828 !important;
+		background-color: /*[[back1]]*/ !important;
 	}
 
 	.weekday {
-		background-color: #282828;
+		background-color: /*[[back1]]*/;
 	}
 
 	.nb > caption:nth-child(1) {
 		background: none !important;
-		background-color: #282828;
+		background-color: /*[[back1]]*/;
 	}
 
 	.tbtime12 {
-		background-color: #353535 !important;
+		background-color: /*[[back3]]*/ !important;
 	}
 
 	table.nb > tbody > tr > td.appointment {
-		background-color: #282828 !important;
+		background-color: /*[[back1]]*/ !important;
 	}
 
 	select {
-		background-color: #353535;
-		color: #aeaeae !important;
+		background-color: /*[[back3]]*/;
+		color: /*[[text1]]*/ !important;
 	}
 
 	option {
-		color: #aeaeae !important;
+		color: /*[[text1]]*/ !important;
 	}
 }
 
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/klausur_und_semesterzeitplaene.aspx") {
 	th {
-		background-color: #474747 !important;
-		color: #aeaeae !important;
+		background-color: /*[[back2]]*/ !important;
+		color: /*[[text1]]*/ !important;
 	}
 }
 
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium_veranstaltungsanmeldung.aspx") {
 	.tbhead > td {
-		background-color: #474747 !important;
+		background-color: /*[[back2]]*/ !important;
 	}
 	
 	.tbsubhead > td {
-		background-color: #353535 !important;
-		color: #aeaeae !important;
+		background-color: /*[[back3]]*/ !important;
+		color: /*[[text1]]*/ !important;
 	}
 }
 
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium_pruefungsanmeldung.aspx") {
 	div.tb > div > div.tbsubhead {
-		background-color: #474747 !important;
+		background-color: /*[[back2]]*/ !important;
 	}
 }
 
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium.aspx") {
 	.owncss_studinfos_tdheader {
-		background-color: #474747 !important;
+		background-color: /*[[back2]]*/ !important;
 	}
 	
 	.owncss_studinfos_tdbody {
@@ -172,8 +181,8 @@
 
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium_ergebnisuebersicht.aspx") {
 	table.nb.list.students_results > thead > tr.tbsubhead > th {
-		background-color: #353535 !important;
-		color: #aeaeae;
+		background-color: /*[[back3]]*/ !important;
+		color: /*[[text1]]*/;
 	}
 	
 	.level00 {
@@ -200,52 +209,52 @@
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/infothek.aspx"), url-prefix("https://osca.hs-osnabrueck.de/lms") {
 	/* Folder Options */
 	.ms-cui-topBar2, .ms-cui-tabBody {
-		background-color: #282828;
-		border-color: #474747;
+		background-color: /*[[back1]]*/;
+		border-color: /*[[back2]]*/;
 	}
 	#Ribbon > div.ms-cui-ribbonTopBars > div.ms-cui-topBar2 {
-		border-color: #474747 !important;
+		border-color: /*[[back2]]*/ !important;
 	}
 	
 	.ms-cui-tt > .ms-cui-tt-a {
-		border-color: #474747 !important;
+		border-color: /*[[back2]]*/ !important;
 	}
 	
 	.ms-cui-tt > .ms-cui-tt-a:hover {
-		background-color: #353535 !important;
+		background-color: /*[[back3]]*/ !important;
 	}
 	
 	.ms-cui-tt-s > .ms-cui-tt-a {
-		background-color: #353535;
+		background-color: /*[[back3]]*/;
 	}
 	
 	.ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span, .ms-cui-tt-a > .ms-cui-tt-span {
-		color: #aeaeae !important;
+		color: /*[[text1]]*/ !important;
 	}
 	
 	.ms-cui-tooltip-body {
-		background-color: #474747 !important;
+		background-color: /*[[back2]]*/ !important;
 	}
 	
 	.ms-cui-groupSeparator {
-		border-color: #474747;
+		border-color: /*[[back2]]*/;
 	}
 	
 	.ms-cui-ctl-mediumlabel, .ms-cui-ctl-largelabel, .ms-cui-groupTitle {
-		color: #aeaeae;
+		color: /*[[text1]]*/;
 	}
 	
 	/* Folder Items */
 	.ms-listlink, .ms-subtleLink, span.ms-noWrap, .ms-vb2 {
-		color: #aeaeae !important;
+		color: /*[[text1]]*/ !important;
 	}
 	
 	.ms-itmHoverEnabled:hover > * {
-		background-color: #353535;
+		background-color: /*[[back3]]*/;
 	}
 	
 	.ms-itmHoverEnabled:hover .ms-list-itemLink-td {
-		background-color: #474747;
+		background-color: /*[[back2]]*/;
 	}
 	
 	.s4-itm-selected > * {
@@ -258,7 +267,7 @@
 	/* Item Popups */
 	
 	.js-callout-beakLeft, .js-callout-beakRight, .js-callout-beakTop, .js-callout-beakBottom, .js-callout-content {
-		background-color: #474747;
+		background-color: /*[[back2]]*/;
 	}
 	
 	.js-callout-footerArea, .js-callout-location {
@@ -266,30 +275,30 @@
 	}
 	
 	.ms-calloutLink:link {
-		color: #aeaeae;
+		color: /*[[text1]]*/;
 	}
 	
 	.js-callout-title {
-		color: #aeaeae !important;
+		color: /*[[text1]]*/ !important;
 	}
 }
 
 @-moz-document domain("netcase.hs-osnabrueck.de") {
     body, #app-sidebar, #app-settings-content, #webdavurl, .section {
-        background-color: #282828;
-		color: #aeaeae;
+        background-color: /*[[back1]]*/;
+		color: /*[[text1]]*/;
     }
     
     #app-navigation, #filestable tbody tr, #controls, #controls .button.new, .nav-trashbin, .settings-button, .settings-button:hover, .settings-button:focus, #searchresults {
-        background-color: #282828;
+        background-color: /*[[back1]]*/;
     }
     
     #controls .button.view-switcher, #content-wrapper {
-        background-color: #282828 !important;
+        background-color: /*[[back1]]*/ !important;
     }
     
     #controls .button.view-switcher:hover, #filestable tbody tr:hover, #filestable tbody tr.highlighted, textarea, input[type="text"], input[type="email"], input[type="button"], select, select:hover {
-        background-color: #474747 !important;
+        background-color: /*[[back2]]*/ !important;
     }
     
     #app-navigation li > a, tbody a, .filesize, .modified, .info > span, button:hover, .settings-button, .tabHeaders .tabHeader.selected a, .tabHeaders .tabHeader:hover a, input[type="text"]:hover, input[type="email"]:hover, input[type="button"]:hover, select:hover {
@@ -301,19 +310,19 @@
     }
     
     textarea, textarea:hover, input[type="text"], input[type="email"], input[type="button"], select {
-		color: #aeaeae;
+		color: /*[[text1]]*/;
     }
     
     table thead th {
-        background-color: #282828;
+        background-color: /*[[back1]]*/;
     }
     
     table th, table td, #app-navigation, .nav-trashbin, #app-settings-header, #app-sidebar, textarea, input[type="email"], 
     textarea, textarea:hover, input[type="text"], input[type="button"], select {
-        border-color: #474747;
+        border-color: /*[[back2]]*/;
     }
     
     .submit, #webdavurl {
-        border-color: #474747 !important;
+        border-color: /*[[back2]]*/ !important;
     }
 }
