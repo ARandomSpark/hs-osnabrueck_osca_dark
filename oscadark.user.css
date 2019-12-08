@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      https://github.com/ARandomSpark
-@version        0.3.1
+@version        0.3.2
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 @homepageURL 	https://github.com/ARandomSpark/hs-osnabrueck_osca_dark
@@ -72,7 +72,7 @@
 	}
 }
 
-@-moz-document domain("login.hs-osnabrueck.de") {
+@-moz-document domain("login.hs-osnabrueck.de"), url-prefix("https://netcase.hs-osnabrueck.de/index.php/login") {
 	/* General */
     body, div {
         background-color: /*[[back1]]*/ !important;
@@ -297,19 +297,23 @@
         background-color: /*[[back1]]*/ !important;
     }
     
-    #controls .button.view-switcher:hover, #filestable tbody tr:hover, #filestable tbody tr.highlighted, textarea, input[type="text"], input[type="email"], input[type="button"], select, select:hover {
+    #controls .button.view-switcher:hover, #filestable tbody tr:hover, #filestable tbody tr.highlighted, textarea, input[type="text"], input[type="email"], input[type="button"], select, select:hover, button, .button, tbody tr:hover, #quota {
         background-color: /*[[back2]]*/ !important;
     }
     
-    #app-navigation li > a, tbody a, .filesize, .modified, .info > span, button:hover, .settings-button, .tabHeaders .tabHeader.selected a, .tabHeaders .tabHeader:hover a, input[type="text"]:hover, input[type="email"]:hover, input[type="button"]:hover, select:hover {
+    #app-navigation li > a, tbody a, .filesize, .modified, .info > span, button:hover, .settings-button, .tabHeaders .tabHeader.selected a, .tabHeaders .tabHeader:hover a, input[type="text"]:hover, input[type="email"]:hover, input[type="button"]:hover, select:hover, button:hover, .button:hover {
         color: #d2d2d2 !important;
     }
+	
+	#quota > div {
+		min-width: 0%;
+	}
     
     a {
         color: #f0f0f0;
     }
     
-    textarea, textarea:hover, input[type="text"], input[type="email"], input[type="button"], select {
+    textarea, textarea:hover, input[type="text"], input[type="email"], input[type="button"], select, button, .button, #quota {
 		color: /*[[text1]]*/;
     }
     
@@ -318,7 +322,7 @@
     }
     
     table th, table td, #app-navigation, .nav-trashbin, #app-settings-header, #app-sidebar, textarea, input[type="email"], 
-    textarea, textarea:hover, input[type="text"], input[type="button"], select {
+    textarea, textarea:hover, input[type="text"], input[type="button"], select, button, .button, #quota, input[type="submit"] {
         border-color: /*[[back2]]*/;
     }
     
