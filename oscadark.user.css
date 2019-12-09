@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      https://github.com/ARandomSpark
-@version        0.3.3
+@version        0.4.0
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 @homepageURL 	https://github.com/ARandomSpark/hs-osnabrueck_osca_dark
@@ -12,7 +12,9 @@
 @var			color back1 "Hintergrund1" #282828
 @var			color back2 "Hintergrund2 + Linien" #474747
 @var			color text1 "Textfarbe1" #aeaeae
+@var			color acc1 "Akzentfarbe" #06abf7
 @var			color back3 "Hintergrund3" #353535
+@var			color text2 "Textfarbe2" #696969
 ==/UserStyle== */
 
 @-moz-document domain("osca.hs-osnabrueck.de") {
@@ -62,6 +64,34 @@
 	
 	button:hover {
 		color: /*[[back3]]*/;
+	}
+	/* Exposing normal text to variable */
+	h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited, .ms-browseTab.ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span, .ms-cui-tt-s > .ms-cui-tt-a:hover > .ms-cui-tt-span, .ms-cui-disabled *, .ms-cui-tt-a:hover > .ms-cui-tt-span{
+		color: /*[[text2]]*/ !important;
+	}
+	
+	div .CampusNet th, .owncss_BenutzerMenue_SubLinks:link, .owncss_BenutzerMenue_SubLinks:visited, .owncss_portal_sitenavigationelement a:link, .owncss_portal_sitenavigationelement a:visited, div .CampusNet .tbhead td, .ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited, th .ms-vb a, .ms-gb, .ms-list-emptyText-compact, .ms-InlineSearch-SearchBox-EmptyUnfocused.ms-InlineSearch-SearchBox-EmptyUnfocused, .ms-vb a.ms-listlink, .ms-vb2 {
+		color: /*[[text2]]*/;
+	}
+	/* Exposing accent color to variable */
+	a:link, button, a:visited {
+		color: /*[[acc1]]*/;
+	}
+	
+	a:hover, .CampusNet .arrow, div .CampusNet .img, .CampusNet .inputFieldLabel .img, .owncss_BenutzerMenu_linkaktiv {
+		color: /*[[acc1]]*/ !important;
+	}
+	
+	button:hover, .s4-itm-selected > .ms-vb-imgFirstCell.ms-vb-imgFirstCell {
+		background-color: /*[[acc1]]*/;
+	}
+	
+	button, button:hover, input[type="submit"]:hover, .ms-cui-cg-db.ms-cui-cg {
+		border-color: /*[[acc1]]*/;
+	}
+	
+	.CampusNet .appointment {
+		border-color: /*[[acc1]]*/ !important;
 	}
 	
 	/* Meine Veranstaltungen > Suchfeld */
@@ -172,8 +202,12 @@
 }
 
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium_pruefungsanmeldung.aspx") {
-	div.tb > div > div.tbsubhead {
+	div.tb > div > div.tbsubhead, select {
 		background-color: /*[[back2]]*/ !important;
+	}
+	
+	select {
+		color: /*[[text1]]*/ !important;
 	}
 }
 
@@ -183,7 +217,7 @@
 	}
 	
 	.owncss_studinfos_tdbody {
-		border-color: #00598b !important;
+		border-color: /*[[acc1]]*/ !important;
 	}
 }
 
