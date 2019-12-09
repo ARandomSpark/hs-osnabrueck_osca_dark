@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      https://github.com/ARandomSpark
-@version        0.3.2
+@version        0.3.3
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 @homepageURL 	https://github.com/ARandomSpark/hs-osnabrueck_osca_dark
@@ -54,6 +54,14 @@
 		background-color: /*[[back1]]*/ !important;
 		color: /*[[text1]]*/ !important;
 		border-color: /*[[back2]]*/ !important;
+	}
+	/* Buttons */
+	button {
+		background-color: /*[[back1]]*/;
+	}
+	
+	button:hover {
+		color: /*[[back3]]*/;
 	}
 	
 	/* Meine Veranstaltungen > Suchfeld */
@@ -207,6 +215,20 @@
 }
 
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/infothek.aspx"), url-prefix("https://osca.hs-osnabrueck.de/lms") {
+	/* Veranstaltungen */
+	.owncss_Panel_GruppenNavigation {
+		background-color: /*[[back2]]*/;
+	}
+	
+	caption, .tbhead {
+		background: none !important;
+		background-color: /*[[back2]]*/ !important;
+	}
+	
+	.courseListCell {
+		border-color: /*[[back2]]*/ !important;
+	}
+	
 	/* Folder Options */
 	.ms-cui-topBar2, .ms-cui-tabBody {
 		background-color: /*[[back1]]*/;
