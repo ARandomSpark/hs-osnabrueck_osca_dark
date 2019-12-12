@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      https://github.com/ARandomSpark
-@version        0.4.0
+@version        0.4.1
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 @homepageURL 	https://github.com/ARandomSpark/hs-osnabrueck_osca_dark
@@ -136,6 +136,22 @@
 	
 	table {
 		background-color: /*[[back1]]*/;
+	}
+	
+	input[type="submit"] {
+		color: /*[[text1]]*/;
+	}
+	
+	/* Exposing accent color to variable  */
+	input[type="submit"] {
+		background-color: /*[[acc1]]*/;
+	}
+	#hsos_impressum a, #hsos_helpdesk a {
+		color: /*[[acc1]]*/;
+	}
+	/* Exposing normal text to variable */
+	#hsos_helpdesk {
+		color: /*[[text2]]*/;
 	}
 }
 @-moz-document url-prefix("http://home.edvsz.hs-osnabrueck.de/skleuker/") {
