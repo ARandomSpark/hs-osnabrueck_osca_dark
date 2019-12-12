@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      https://github.com/ARandomSpark
-@version        0.4.1
+@version        0.4.2
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 @homepageURL 	https://github.com/ARandomSpark/hs-osnabrueck_osca_dark
@@ -264,7 +264,7 @@
 	}
 }
 
-@-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/infothek.aspx"), url-prefix("https://osca.hs-osnabrueck.de/lms") {
+@-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/infothek.aspx"), url-prefix("https://osca.hs-osnabrueck.de/lms"), url-prefix("https://osca.hs-osnabrueck.de/Wikibereich") {
 	/* Veranstaltungen */
 	.owncss_Panel_GruppenNavigation {
 		background-color: /*[[back2]]*/;
