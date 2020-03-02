@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      https://github.com/ARandomSpark
-@version        0.4.2
+@version        0.4.3
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 @homepageURL 	https://github.com/ARandomSpark/hs-osnabrueck_osca_dark
@@ -108,9 +108,13 @@
 	.owncss_div_SelectedSemester, .owncss_div_semesterchoise {
 		background-color: /*[[back3]]*/;
 	}
+	/* Fixing the annoying white line under the semester selector because they screwed up by one pixel */
+	.owncss_div_SelectedSemester {
+		padding-bottom: 5px;
+	}
 }
 
-@-moz-document domain("login.hs-osnabrueck.de"), url-prefix("https://netcase.hs-osnabrueck.de/index.php/login") {
+@-moz-document domain("login.hs-osnabrueck.de"), url-prefix("https://netcase.hs-osnabrueck.de/index.php/login"), regexp("https://netcase.hs-osnabrueck.de/index.php/s/.*/authenticate") {
 	/* General */
     body, div {
         background-color: /*[[back1]]*/ !important;
@@ -181,7 +185,7 @@
 		background-color: /*[[back1]]*/;
 	}
 
-	.tbtime12 {
+	.tbtime12, .tbtime02 {
 		background-color: /*[[back3]]*/ !important;
 	}
 
@@ -206,7 +210,7 @@
 	}
 }
 
-@-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium_veranstaltungsanmeldung.aspx") {
+@-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium_veranstaltungsanmeldung.aspx"), url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium_veranstaltungsuebersicht.aspx"), url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium_pruefungsanmeldung.aspx") {
 	.tbhead > td {
 		background-color: /*[[back2]]*/ !important;
 	}
@@ -215,17 +219,25 @@
 		background-color: /*[[back3]]*/ !important;
 		color: /*[[text1]]*/ !important;
 	}
-}
 
-@-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium_pruefungsanmeldung.aspx") {
-	div.tb > div > div.tbsubhead, select {
+	.CampusNet .tbsubhead {
 		background-color: /*[[back2]]*/ !important;
+		color: /*[[text1]]*/;
 	}
-	
+	div .CampusNet caption {
+		background: none;
+		background-color: /*[[back2]]*/;
+	}
+	.CampusNet a span {
+		color: /*[[text1]]*/;
+	}
 	select {
+		background-color: /*[[back3]]*/;
 		color: /*[[text1]]*/ !important;
 	}
 }
+
+
 
 @-moz-document url-prefix("https://osca.hs-osnabrueck.de/NavPages/studium.aspx") {
 	.owncss_studinfos_tdheader {
@@ -401,4 +413,8 @@
     .submit, #webdavurl {
         border-color: /*[[back2]]*/ !important;
     }
+	
+	#preview {
+		background-color: /*[[back1]]*/;
+	}
 }
