@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark (red)
 @namespace      https://github.com/ARandomSpark
-@version        0.4.3
+@version        0.4.4
 @description    Red Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 @homepageURL 	https://github.com/ARandomSpark/hs-osnabrueck_osca_dark
@@ -58,13 +58,19 @@
 		border-color: /*[[back2]]*/ !important;
 	}
 	/* Buttons */
-	button {
+	button, button.ms-button-emphasize {
 		background-color: /*[[back1]]*/;
 	}
 	
-	button:hover {
+	button:hover, button.ms-button-emphasize:hover {
 		color: /*[[back3]]*/;
 	}
+	
+	input[type="button"][disabled], input[type="reset"][disabled], input[type="submit"][disabled], button[disabled][disabled] {
+		background-color: /*[[back1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
 	/* Exposing normal text to variable */
 	h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited, .ms-browseTab.ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span, .ms-cui-tt-s > .ms-cui-tt-a:hover > .ms-cui-tt-span, .ms-cui-disabled *, .ms-cui-tt-a:hover > .ms-cui-tt-span{
 		color: /*[[text2]]*/ !important;
@@ -74,7 +80,7 @@
 		color: /*[[text2]]*/;
 	}
 	/* Exposing accent color to variable */
-	a:link, button, a:visited {
+	a:link, button, a:visited, button.ms-button-emphasize {
 		color: /*[[acc1]]*/;
 	}
 	
@@ -82,11 +88,11 @@
 		color: /*[[acc1]]*/ !important;
 	}
 	
-	button:hover, .s4-itm-selected > .ms-vb-imgFirstCell.ms-vb-imgFirstCell {
+	button:hover, .s4-itm-selected > .ms-vb-imgFirstCell.ms-vb-imgFirstCell, button.ms-button-emphasize:hover {
 		background-color: /*[[acc1]]*/;
 	}
 	
-	button, button:hover, input[type="submit"]:hover, .ms-cui-cg-db.ms-cui-cg {
+	button, button:hover, input[type="submit"]:hover, .ms-cui-cg-db.ms-cui-cg, button.ms-button-emphasize, button.ms-button-emphasize:hover {
 		border-color: /*[[acc1]]*/;
 	}
 	
@@ -289,6 +295,11 @@
 	
 	.courseListCell {
 		border-color: /*[[back2]]*/ !important;
+	}
+	
+	/* Forum */
+	.ms-comm-rootBestBackground {
+		background-color: /*[[back1]]*/;
 	}
 	
 	/* Folder Options */
