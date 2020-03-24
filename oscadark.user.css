@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Osca dark
 @namespace      https://github.com/ARandomSpark
-@version        0.4.4
+@version        0.5.0
 @description    Dark Theme for osca.hs-osnabrueck.de
 @author         ARandomSpark
 @homepageURL 	https://github.com/ARandomSpark/hs-osnabrueck_osca_dark
@@ -428,4 +428,179 @@
 	#preview {
 		background-color: /*[[back1]]*/;
 	}
+}
+
+@-moz-document domain("opencast.hs-osnabrueck.de") {
+	body {
+		background-color: /*[[back1]]*/;
+		color: /*[[text1]]*/;
+	}
+	
+	a, a:hover, a:focus {
+		color: /*[[acc1]]*/;
+	}
+	
+	.tile {
+		border-color: /*[[back2]]*/;
+	}
+	
+	.tile:hover {
+		color: /*[[acc1]]*/;
+		background-color: /*[[back3]]*/;
+	}
+	
+	.navbar-default {
+		background-color: /*[[back2]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	.seriesindicator {
+		filter: opacity(50%);
+	}
+	
+	.thumbnail {
+		background-color: /*[[back1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	.navbar-default .navbar-brand, 
+	.navbar-default .navbar-brand:hover, 
+	.navbar-default .navbar-brand:focus, 
+	.navbar-default .navbar-nav > li > a, 
+	.navbar-default .navbar-nav > li > a:hover, 
+	.navbar-default .navbar-nav > li > a:focus {
+		color: /*[[text1]]*/;
+	}
+	
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover, 
+	.navbar-default .navbar-nav > .active > a:focus{
+		background-color: /*[[acc1]]*/;
+		color: /*[[text1]]*/;
+	}
+	
+	.pager li > a, .pager li > span {
+		background-color: /*[[back1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	.pager li > a:hover, .pager li > a:focus {
+		color: /*[[text1]]*/;
+		background-color: /*[[acc1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	.pager .disabled > a, 
+	.pager .disabled > a:focus, 
+	.pager .disabled > a:hover, 
+	.pager .disabled > span {
+		color: /*[[text2]]*/;
+		background-color: /*[[back1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	.form-control, .btn-default {
+		background-color: /*[[back3]]*/;
+		border-color: /*[[back2]]*/;
+		color: /*[[text1]]*/;
+	}
+	
+	.form-control:focus {
+		border-color: /*[[acc1]]*/;
+	}
+	
+	.btn-default.active, 
+	.btn-default.focus, 
+	.btn-default:active, 
+	.btn-default:focus, 
+	.btn-default:hover, 
+	.open > .dropdown-toggle.btn-default {
+		color: /*[[text1]]*/;
+		background-color: /*[[acc1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	/* Player */
+	#engage_controls_second, #engage_controls {
+		background-color: /*[[back1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	#navigation_control > div > img {
+		filter: invert();
+	}
+	
+	#navigation_wrapper {
+		background-color: /*[[back1]]*/;
+	}
+	
+	.segment {
+		border-color: /*[[back2]]*/;
+	}
+	
+	.segmentHover {
+		background-color: /*[[acc1]]*/;
+	}
+	
+	#slider {
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-color: /*[[back2]]*/;
+		box-shadow: none;
+		background: none;
+	}
+	
+	.nav-tabs {
+		border-color: /*[[back2]]*/;
+	}
+	
+	.nav > li > a:hover, 
+	.nav > li > a:focus {
+		border-color: /*[[back2]]*/;
+		background-color: /*[[back3]]*/;
+	}
+	
+	.nav-tabs > li.active > a, 
+	.nav-tabs > li.active > a:hover, 
+	.nav-tabs > li.active > a:focus {
+		background-color: /*[[acc1]]*/;
+		color: /*[[text1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	#engage_tab_content {
+		background-color: /*[[back1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	.table-striped > tbody > tr:nth-of-type(2n+1) {
+		background-color: /*[[back3]]*/;
+	}
+	
+	.table-bordered > thead > tr > th, 
+	.table-bordered > tbody > tr > th, 
+	.table-bordered > tfoot > tr > th, 
+	.table-bordered > thead > tr > td, 
+	.table-bordered > tbody > tr > td, 
+	.table-bordered > tfoot > tr > td {
+		border-color: /*[[back2]]*/;
+	}
+	
+	.table-hover > tbody > tr:nth-of-type(2n):hover {
+		background-color: /*[[back1]]*/;
+	}
+	
+	.mediaColor {
+		background-color: /*[[back3]]*/;
+		color: /*[[text1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
+	.mediaColor-hover {
+		background-color: /*[[acc1]]*/;
+		color: /*[[text1]]*/;
+		border-color: /*[[back2]]*/;
+	}
+	
 }
